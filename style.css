@@ -1,0 +1,302 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,500&display=swap");
+
+.text_sm {
+  color: #8e8e8e;
+  text-align: center;
+  font-family: DM Sans;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 99%; /* 44.82px */
+  text-transform: capitalize;
+}
+
+.text_sm-bold {
+  color: #000;
+  text-align: center;
+  font-family: DM Sans;
+  font-size: 17.74px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 99%; /* 51.223px */
+  text-transform: capitalize;
+}
+
+.text_sm-orange {
+  color: #e8830f;
+  text-align: center;
+  font-family: DM Sans;
+  font-size: 15.74px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 99%; /* 51.223px */
+  text-transform: capitalize;
+}
+
+.m-y {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.m-x {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.p-x {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.section {
+  background-image: url("/images/ticket-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 0 auto;
+  max-width: 700px;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.ticket_container {
+  border-radius: 48.506px;
+  background: #fff;
+  padding: 20px 10px;
+}
+
+.passenger_container {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 30px;
+  border-bottom: 1px dashed gray;
+}
+
+.passenger_img {
+  max-width: 60px;
+  height: 60px;
+  flex-shrink: 0;
+}
+
+.passenger_img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.shohan_shabbir {
+  color: #000;
+  text-align: center;
+  font-family: DM Sans;
+  font-size: 25.61px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 99%; /* 76.834px */
+  text-transform: capitalize;
+}
+
+.passengerText {
+  color: #8e8e8e;
+  /* text-align: center; */
+  font-family: DM Sans;
+  font-size: 25.61px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 99%; /* 76.834px */
+  text-transform: capitalize;
+}
+
+.from-to_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-top: 70px;
+  padding-bottom: 50px;
+}
+
+.from {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.to {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.bus-parkOutline-container {
+  position: relative;
+}
+
+.bus-parkOutline-container img {
+  width: 60px;
+  background-color: rgba(232, 131, 15, 0.13);
+  position: relative;
+  border-radius: 25px;
+  padding: 2px;
+}
+
+.bus-parkOutline-container::before {
+  content: "";
+
+  position: absolute;
+  top: 50%;
+  left: -50px;
+  right: 43px;
+  width: 83%;
+  height: 2px;
+  background-color: hsl(25, 87%, 60%);
+}
+
+.bus-parkOutline-container::after {
+  content: "";
+
+  position: absolute;
+  top: 50%;
+  left: 60px;
+  right: 43px;
+  width: 83%;
+  height: 2px;
+  background-color: hsl(25, 87%, 60%);
+}
+
+.time_date-selection-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px dashed gray;
+}
+
+.rectangular {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  max-width: 247px;
+  padding: 8px 19px;
+  border-radius: 25.87px;
+  border: 2px solid #c0bdbd;
+}
+
+.rectangular img {
+  width: 30%;
+}
+
+.bus_details-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 54px;
+  margin-top: 30px;
+}
+
+.bus-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+}
+
+.qr_code-img {
+  max-width: 200px;
+  margin: 38px auto 0 auto;
+}
+
+.qr_code-img img {
+  width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  .p-x {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .passenger_container {
+    gap: 15px;
+    padding: 30px;
+  }
+
+  .text_sm {
+    font-size: 11px;
+  }
+
+  .text_sm-bold {
+    font-size: 10px;
+  }
+
+  .bus-parkOutline-container::before {
+    left: -38px;
+    right: 43px;
+    width: 63%;
+    height: 2px;
+  }
+
+  .bus-parkOutline-container::after {
+    left: 60px;
+    right: 43px;
+    width: 63%;
+    height: 2px;
+    background-color: hsl(25, 87%, 60%);
+  }
+
+  .time_date-selection-container {
+    gap: 10px;
+  }
+  .rectangular {
+    gap: 10px;
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .shohan_shabbir {
+    font-size: 19px;
+  }
+
+  .ticket_container {
+    padding: 10px 9px;
+  }
+  .passengerText {
+    font-size: 20px;
+  }
+  .p-x {
+    padding-left: 3px;
+    padding-right: 3px;
+  }
+
+  .bus-parkOutline-container::before {
+    left: -23px;
+    right: 43px;
+    width: 38%;
+    height: 2px;
+  }
+
+  .bus-parkOutline-container::after {
+    left: 60px;
+    right: 43px;
+    width: 38%;
+    height: 2px;
+    background-color: hsl(25, 87%, 60%);
+  }
+
+  .text_sm-orange {
+    font-size: 12px;
+  }
+
+  .bus_details-container {
+    grid-gap: 38px;
+  }
+}
